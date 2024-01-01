@@ -1,10 +1,12 @@
 {
   "name": "cli-price-notifier",
   "version": "1.0.0",
-  "description": "This CLI is an app for notifying you when a price of product is low",
+  "description": "CLI PriceNotifier: Your go-to app for tracking product prices across top e-commerce. Search by name, and get instant notifications when prices drop. Shop smart, save big!",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/DanielFlores1223/CLI-Price-Notifier/issues"
   },
-  "homepage": "https://github.com/DanielFlores1223/CLI-Price-Notifier#readme"
+  "homepage": "https://github.com/DanielFlores1223/CLI-Price-Notifier#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
 }
