@@ -1,0 +1,27 @@
+{
+  "name": "cli-price-notifier",
+  "version": "1.0.0",
+  "description": "This CLI is an app for notifying you when a price of product is low",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielFlores1223/CLI-Price-Notifier.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "cli",
+    "scrapping",
+    "clean",
+    "architecture"
+  ],
+  "author": "Daniel Flores",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielFlores1223/CLI-Price-Notifier/issues"
+  },
+  "homepage": "https://github.com/DanielFlores1223/CLI-Price-Notifier#readme"
+}
