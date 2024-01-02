@@ -4,9 +4,9 @@
     "description": "CLI PriceNotifier: Your go-to app for tracking product prices across top e-commerce. Search by name, and get instant notifications when prices drop. Shop smart, save big!",
     "main": "app.js",
     "scripts": {
-        "dev": "tsnd --respawn --clear src/app.ts",
+        "dev": "tsnd --respawn --clear src/index.ts",
         "build": "rimraf ./dist && tsc",
-        "start": "npm run build && node dist/app.js",
+        "start": "npm run build && node dist/index.js",
         "prettier": "prettier --check ./src  --write ./src",
         "lint": "eslint ./src --fix ./src",
         "prepare": "husky install"
@@ -29,18 +29,20 @@
     },
     "homepage": "https://github.com/DanielFlores1223/CLI-Price-Notifier#readme",
     "devDependencies": {
+        "@types/inquirer": "^9.0.7",
         "@types/node": "^20.10.6",
         "@typescript-eslint/eslint-plugin": "^6.17.0",
         "@typescript-eslint/parser": "^6.17.0",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
+        "husky": "^8.0.0",
         "prettier": "^3.1.1",
         "rimraf": "^5.0.5",
         "ts-node-dev": "^2.0.0",
-        "typescript": "^5.3.3",
-        "husky": "^8.0.0"
+        "typescript": "^5.3.3"
     },
     "dependencies": {
+        "@inquirer/prompts": "^3.3.0",
         "husky": "^8.0.3"
     }
 }
