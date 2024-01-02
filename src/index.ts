@@ -1,9 +1,11 @@
 import { CLIApp } from './presentation/cli-app';
+import { SQLiteDB } from './data/sqlite';
 
 (() => {
     main();
 })();
 
-function main() {
+async function main() {
+    await SQLiteDB.connect();
     CLIApp.start();
 }
