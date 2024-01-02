@@ -1,10 +1,4 @@
-interface Attributes {
-    id: number;
-    userName: string;
-    email: string | null;
-    numberPhone: string | null;
-    localNotification: boolean;
-}
+import { PreferenceAttributes } from '../../config/interfaces';
 
 export class PreferenceEntity {
     public id: number;
@@ -13,7 +7,7 @@ export class PreferenceEntity {
     public numberPhone: string | null;
     public localNotification: boolean;
 
-    constructor(attributes: Attributes) {
+    constructor(attributes: PreferenceAttributes) {
         const { id, email, localNotification, numberPhone, userName } =
             attributes;
 

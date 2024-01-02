@@ -1,5 +1,6 @@
-import { Sequelize } from 'sequelize-typescript';
 import path from 'path';
+import { Sequelize } from 'sequelize-typescript';
+import * as models from './models';
 
 export class SQLiteDB {
     private static instance: SQLiteDB;
@@ -21,7 +22,7 @@ export class SQLiteDB {
             username: 'root',
             password: '',
             storage: this.getPathDBFile(),
-            models: [__dirname + '/models'],
+            models: Object.values(models),
             logging: false,
         });
 
