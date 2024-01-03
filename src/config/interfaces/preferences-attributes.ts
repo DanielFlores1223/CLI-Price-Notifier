@@ -1,5 +1,5 @@
 export interface PreferenceAttributes {
-    id: number;
+    id?: number;
     userName: string;
     email: string | null;
     numberPhone: string | null;

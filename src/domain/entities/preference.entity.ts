@@ -1,7 +1,7 @@
 import { PreferenceAttributes } from '../../config/interfaces';
 
 export class PreferenceEntity {
-    public id: number;
+    public id?: number;
     public userName: string;
     public email: string | null;
     public numberPhone: string | null;
