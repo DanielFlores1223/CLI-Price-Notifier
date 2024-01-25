@@ -7,7 +7,7 @@ const { goodRespose } = OutputCliAdapter;
 export class CreatePreferenceForm {
     constructor(private readonly configAppRepository: ConfigAppRepository) {}
 
-    public async generate_cli() {
+    public async generateCli() {
         let email: string | null = null;
         let numberPhone: string | null = null;
 
@@ -46,8 +46,6 @@ export class CreatePreferenceForm {
             numberPhone,
             localNotification,
         });
-
-        console.log('CREATED', created);
 
         if (!created)
             goodRespose({
